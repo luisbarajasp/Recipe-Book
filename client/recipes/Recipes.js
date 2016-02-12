@@ -5,6 +5,12 @@ Template.Recipes.onCreated(function() {
     });
 });
 
+Template.Recipes.events({
+    'click .btn-new-recipe': function(){
+        Session.set('newRecipe',true);
+    }
+});
+
 Template.Recipes.helpers({
     recipes: () => {
         return Recipes.find({});

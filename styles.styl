@@ -139,6 +139,9 @@ p
         top 0
         right 0
         padding 20px
+        &:hover
+            color red
+            cursor pointer
     label
         display block
         margin-bottom 10px
@@ -213,6 +216,15 @@ p
             opacity 1
             shadow-level(2)
             border-color @background
+
+.btn-new-recipe
+    width 100%
+    margin-bottom 10px
+    background transparent
+    color purp
+    &:hover
+        color #fff
+
 
 input, select, textarea
     color purp
@@ -343,6 +355,20 @@ input, select, textarea
         trans()
         &:hover
             color red
+            opacity 0.6
+    .fa-pencil
+        opacity 0.3
+        cursor pointer
+        position absolute
+        top 0
+        right 40px
+        font-size 1.6em
+        display block
+        padding 20px
+        color black
+        trans()
+        &:hover
+            color rgb(22, 129, 127)
             opacity 0.6
     .ingredient
         display inline-block
